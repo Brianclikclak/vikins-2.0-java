@@ -22,7 +22,14 @@ public class Vikings extends Soldier{
     public String getMsg(){
         return this.msg;
     }
+
+    public String battleCry(){
+        return  "Odin Owns You All!";
+
     }
+}
+
+
 
 
 
