@@ -74,16 +74,16 @@ class VikingTest {
         assertEquals(viking.name + "has died in combat", viking.getMsg());
     }
 
-//    @Test
-//    public void battleCry_should_receive_0_arguments() {
-//        String crying = "crying";
-//        String battleCry = viking.battleCry();
-//        assertEquals("Odin Owns You All!", battleCry);
-//    }
-//
-//    @Test
-//    public void should_return_Odin_Owns_You_All_() {
-//        viking.battleCry();
-//        assertEquals("Odin Owns You All!", viking.battleCry());
-//    }
+    @Test
+    public void battleCry_should_receive_0_arguments() {
+        String crying = "crying";
+        String battleCry = viking.battleCry();
+        assertEquals("Odin Owns You All!", battleCry);
+    }
+
+    @Test
+    public void should_return_Odin_Owns_You_All_() {
+        viking.battleCry();
+        assertEquals("Odin Owns You All!", viking.battleCry());
+    }
 }
