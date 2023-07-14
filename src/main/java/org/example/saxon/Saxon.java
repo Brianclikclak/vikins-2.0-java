@@ -11,20 +11,31 @@ public class Saxon extends Soldier {
     }
 
     @Override
-    public int attack() {
+    public int attack()
+    {
         return super.attack();
     }
 
     public void receiveDamage(int damage) {
-
-        this.health -= damage;
-            if (health > 0) {
-            this.msg = "A Saxon has received " + damage + " points of damage";
-            }else { this.msg = "A Saxon has died in combat";
+        super.receiveDamage(damage);
+       /* this.health -= damage;*/
+            if (this.health > 0) {
+            this.setMsg("A Saxon has received " + damage + " points of damage");
+            }else { this.setMsg("A Saxon has died in act of combat");
         }
     }
 
     public String getMsg() {
         return  this.msg;
+    }
+
+
+        public void setMsg(String msg){
+        this.msg = msg;
+}
+
+
+    public void setHealth(int health) {
+        this.health = health;
     }
 }
