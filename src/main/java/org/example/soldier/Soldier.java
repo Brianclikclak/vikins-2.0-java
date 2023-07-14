@@ -2,10 +2,19 @@ package org.example.soldier;
 
 public class Soldier<damage> {
 
+    public int getHealth() {
+        return health;
+    }
+
     public int health;
+
+    public int getStrength() {
+        return strength;
+    }
+
     public int strength;
 
-    public int damage;
+
 
 
     
